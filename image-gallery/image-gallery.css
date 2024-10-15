@@ -1,0 +1,32 @@
+*{
+ 
+    box-sizing: border-box
+}
+
+
+ body{
+    margin: 0;
+ }
+
+ .gallery{
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+   
+
+ }
+
+.box{
+  flex: 25%;
+  object-fit: cover;
+  padding: 0px 3px;
+ 
+
+}
+img{
+    width: 100%;
+    object-fit: cover;
+   
+}
+

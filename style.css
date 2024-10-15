@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", serif;
+}
+#container{
+    width: 100%;
+    position: relative;
+    height: 100vh;/*  viewport height */
+}
+#logo{
+    width: 200px;
+   
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+    /* background-color: aquamarine; */
+
+}
+.list-items{
+    display: inline;
+    margin: 0px  20px;
+}
+.links{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+       
+}
+/* pseudo class */
+
+/* tagname:pesudocode{
+ property/;value
+} */
+
+.links:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+.home-content{
+    margin: 13% 0% 0% 8%;
+}
+#uname{
+    font-family: "Rochester", cursive;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+#lname{
+    color:rgb(194, 21, 21);
+    font-family: "Rochester", cursive;
+}
+.personal-detials{
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.dwnld{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home-images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom:0;
+    right: 40px;
+}
+.group{
+    position:absolute;
+    height: 100%;
+    left:0;
+    bottom: 0;
+    transition: left 2s,bottom 1s;
+}
+.home-images:hover #shape{
+    bottom: 20px;
+}
+.home-images:hover #boy{
+    left: -20px;
+}
+
+#about{
+    margin:15% 0% 0% 8%;
+}
+.section-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 50px;
+
+}
+
+.main-head{
+    font-size: 50px;
+    font-family:  "Rochester", cursive;
+    
+}
+.sub-head{
+    font-size: 30px;
+    font-family:  "Rochester", cursive;
+    color:green;
+}
+
+.about-img>img{
+    width: 500px;
+}
+.about-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.about-content{
+    font-size: 18px;
+    padding: 5px;
+    text-align: justify;
+    line-height: 1.5;
+    
+}
+.information{
+    margin-top: 10px;
+}
+.info-box>span{
+    margin-left:10px
+}
+.phn>span{
+    margin-left:10px
+}
+.email>span{
+    margin-left:10px
+}
+#skills{
+    margin:8% 8% 0% 8%;
+}
+
+.skill-body{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+
+    align-items: center;
+    gap: 2rem ;
+    /* 1rem=6px   */
+
+}
+#my-skills{
+    width: 100%;
+    margin: 20px;
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.bar-head,.bar-percent{
+    font-size: 20px;
+    font-weight: bold;
+}
+.base-bar{
+    width: 100%;
+    background-color: black;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0%;
+
+}
+.html-bar{
+    width: 90%;
+    background-color: rgb(234, 183, 15);
+}
+.css-bar{
+    width: 80%;
+    background-color: rgb(234, 183, 15);
+}
+.bootstrap-bar{
+    width: 53%;
+    background-color: rgb(234, 183, 15);
+}
+.js-bar{
+    width: 83%;
+    background-color: rgb(234, 183, 15);
+}
+.skill-image{
+    margin:10px;
+    padding: 5px;
+    height: 500px;
+    width: 600px;
+}
+
+#contacts{
+    margin:8%;
+}
+.cont-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.icon{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(225, 122, 18);
+    margin: 0px 10px;
+
+}
+.social{
+    color: black;
+    font-size: 25px;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,
+    white,orange, red,yellow, blue);
+ 
+    animation: rotate 2s;
+}
+.social:hover{
+    color: white;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(30deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    80%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+    
+}
+#copyright{
+    text-align: center;
+    font-weight: bold;
+
+}
+#up-arrow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar{
+    width: 15px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: azure;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(239, 125, 11);
+    border-radius: 10px;
+}
+
+
+
+
+
+
